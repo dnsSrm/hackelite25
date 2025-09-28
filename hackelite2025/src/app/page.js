@@ -1309,16 +1309,36 @@ export default function Home() {
           gap: 0.5rem;
           padding: 0.8rem 1.5rem;
           background: linear-gradient(45deg, var(--cyber-cyan), var(--cyber-magenta));
-          color: var(--bg-primary);
+          color: white;
           text-decoration: none;
           border-radius: 25px;
           font-weight: 600;
           transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+          text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 15px rgba(0, 212, 255, 0.2);
+        }
+
+        .social-link::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+          transition: left 0.6s ease;
+        }
+
+        .social-link:hover::before {
+          left: 100%;
         }
 
         .social-link:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 10px 20px rgba(0, 212, 255, 0.3);
+          transform: translateY(-3px) scale(1.05);
+          box-shadow: 0 12px 25px rgba(0, 212, 255, 0.4), 0 0 20px rgba(255, 0, 110, 0.3);
+          text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
         }
 
         .social-icon {
