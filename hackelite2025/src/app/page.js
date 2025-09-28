@@ -305,100 +305,27 @@ export default function Home() {
       <section id="timeline" className="section-container">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Event Timeline</h2>
+            <h2 className="section-title">Competition Stages</h2>
             <p className="section-subtitle">
-              A carefully crafted 24-hour journey from ideation to implementation
+              Three exciting stages of innovation and competition
             </p>
           </div>
 
           <div className="timeline-container">
-            <div className="timeline-header">
-              <div className="date-range">
-                <div className="start-date">
-                  <span className="date-label">Start</span>
-                  <span className="date-value">Oct 14, 2025</span>
-                  <span className="time-value">12:00 PM</span>
-                </div>
-                <div className="duration-line"></div>
-                <div className="end-date">
-                  <span className="date-label">End</span>
-                  <span className="date-value">Oct 15, 2025</span>
-                  <span className="time-value">12:00 PM</span>
-                </div>
-              </div>
-            </div>
-
             <div className="timeline-phases">
               <div className="phase-card">
-                <div className="phase-time">12:00 PM - 2:00 PM</div>
-                <h3>Opening & Team Formation</h3>
-                <ul>
-                  <li>Registration & Check-in</li>
-                  <li>Opening Ceremony</li>
-                  <li>Problem Statement Release</li>
-                  <li>Team Formation (Max 4 members)</li>
-                  <li>Mentorship Session</li>
-                </ul>
+                <h3>Stage 1: Idea Submission</h3>
+                <p>Submit your innovative ideas and concepts for evaluation. Show us your vision and potential impact.</p>
               </div>
 
               <div className="phase-card">
-                <div className="phase-time">2:00 PM - 6:00 PM</div>
-                <h3>Ideation & Planning</h3>
-                <ul>
-                  <li>Brainstorming Sessions</li>
-                  <li>Solution Architecture</li>
-                  <li>Technology Stack Selection</li>
-                  <li>Project Planning</li>
-                  <li>Mentor Consultations</li>
-                </ul>
+                <h3>Stage 2: Prototype Round</h3>
+                <p>Develop a working prototype of your idea. Demonstrate the feasibility and core functionality of your solution.</p>
               </div>
 
               <div className="phase-card">
-                <div className="phase-time">6:00 PM - 12:00 AM</div>
-                <h3>Development Phase I</h3>
-                <ul>
-                  <li>Core Development</li>
-                  <li>Backend Implementation</li>
-                  <li>Database Design</li>
-                  <li>API Development</li>
-                  <li>Dinner Break (8:00 PM)</li>
-                </ul>
-              </div>
-
-              <div className="phase-card">
-                <div className="phase-time">12:00 AM - 6:00 AM</div>
-                <h3>Midnight Coding</h3>
-                <ul>
-                  <li>Frontend Development</li>
-                  <li>UI/UX Implementation</li>
-                  <li>Integration Testing</li>
-                  <li>Late Night Snacks</li>
-                  <li>24/7 Mentor Support</li>
-                </ul>
-              </div>
-
-              <div className="phase-card">
-                <div className="phase-time">6:00 AM - 10:00 AM</div>
-                <h3>Final Sprint</h3>
-                <ul>
-                  <li>Bug Fixes & Testing</li>
-                  <li>Performance Optimization</li>
-                  <li>Documentation</li>
-                  <li>Presentation Preparation</li>
-                  <li>Breakfast</li>
-                </ul>
-              </div>
-
-              <div className="phase-card">
-                <div className="phase-time">10:00 AM - 12:00 PM</div>
-                <h3>Presentations & Awards</h3>
-                <ul>
-                  <li>Final Submissions</li>
-                  <li>Project Presentations</li>
-                  <li>Judging & Evaluation</li>
-                  <li>Award Ceremony</li>
-                  <li>Closing Ceremony</li>
-                </ul>
+                <h3>Stage 3: Final 24 Hour Hackathon</h3>
+                <p>The ultimate coding challenge! Refine your solution, add features, and prepare for the final presentation.</p>
               </div>
             </div>
           </div>
@@ -530,17 +457,8 @@ export default function Home() {
               <div className="contact-icon">📧</div>
               <h3>Email Us</h3>
               <p>For general inquiries and support</p>
-              <a href="mailto:hackelite@dns.srmist.edu.in" className="contact-link">
-                hackelite@dns.srmist.edu.in
-              </a>
-            </div>
-
-            <div className="contact-card">
-              <div className="contact-icon">📱</div>
-              <h3>WhatsApp</h3>
-              <p>Quick questions and updates</p>
-              <a href="https://wa.me/919876543210" className="contact-link">
-                +91 98765 43210
+              <a href="mailto:dns.club.srm@gmail.com" className="contact-link">
+                dns.club.srm@gmail.com
               </a>
             </div>
 
@@ -559,14 +477,8 @@ export default function Home() {
               <h3>Organizers</h3>
               <div className="organizer-list">
                 <div className="organizer">
-                  <strong>Arjun Kumar</strong>
-                  <span>Event Head</span>
-                  <a href="tel:+919876543211">+91 98765 43211</a>
-                </div>
-                <div className="organizer">
-                  <strong>Priya Sharma</strong>
-                  <span>Tech Coordinator</span>
-                  <a href="tel:+919876543212">+91 98765 43212</a>
+                  <strong>DNS - Developer Network Space</strong>
+                  <a href="mailto:dns.club.srm@gmail.com">dns.club.srm@gmail.com</a>
                 </div>
               </div>
             </div>

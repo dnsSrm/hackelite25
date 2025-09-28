@@ -18,15 +18,6 @@ export default function Footer() {
     { name: "Contact", href: "#contact" }
   ];
 
-  const importantLinks = [
-    { name: "Event Guidelines", href: "#guidelines" },
-    { name: "Code of Conduct", href: "#conduct" },
-    { name: "Terms & Conditions", href: "#terms" },
-    { name: "Privacy Policy", href: "#privacy" },
-    { name: "FAQs", href: "#faq" },
-    { name: "Help Center", href: "#help" }
-  ];
-
   const socialMedia = [
     { 
       platform: "Instagram", 
@@ -42,20 +33,6 @@ export default function Footer() {
       color: "neon-cyan",
       url: "https://www.linkedin.com/company/dns-club-srm/" 
     }
-  ];
-
-  const contactInfo = {
-    address: "SRM Institute of Science and Technology, Vadapalani Campus, Chennai - 600089",
-    email: "hackelite@dns.srmist.edu.in",
-    phone: "+91 XXXX-XXXX-XX",
-    website: "www.dns.srmist.edu.in"
-  };
-
-  const sponsors = [
-    { name: "TechCorp", logo: "🏢" },
-    { name: "InnovateInc", logo: "💻" },
-    { name: "FutureCode", logo: "🚀" },
-    { name: "DigitalEdge", logo: "⚡" }
   ];
 
   return (
@@ -102,50 +79,6 @@ export default function Footer() {
               ))}
             </ul>
           </div>
-
-          {/* Important Links */}
-          <div className="footer-section-content">
-            <h4 className="footer-heading orbitron neon-green">Resources</h4>
-            <ul className="footer-links">
-              {importantLinks.map((link, index) => (
-                <li key={index} className="footer-link-item">
-                  <a href={link.href} className="footer-link">
-                    <span className="link-bullet neon-green">▶</span>
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact Info */}
-          <div className="footer-section-content">
-            <h4 className="footer-heading orbitron neon-cyan">Get in Touch</h4>
-            <div className="contact-details">
-              <div className="contact-item">
-                <span className="contact-icon neon-magenta">📍</span>
-                <span className="contact-text">{contactInfo.address}</span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon neon-cyan">📧</span>
-                <a href={`mailto:${contactInfo.email}`} className="contact-link">
-                  {contactInfo.email}
-                </a>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon neon-green">📞</span>
-                <a href={`tel:${contactInfo.phone}`} className="contact-link orbitron">
-                  {contactInfo.phone}
-                </a>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon neon-magenta">🌐</span>
-                <a href={`https://${contactInfo.website}`} className="contact-link">
-                  {contactInfo.website}
-                </a>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Social Media Section */}
@@ -172,53 +105,6 @@ export default function Footer() {
                 <div className="social-glow"></div>
               </a>
             ))}
-          </div>
-        </div>
-
-        {/* Sponsors Section */}
-        <div className="footer-sponsors">
-          <h4 className="sponsors-heading orbitron neon-green">
-            Powered by Our Sponsors
-          </h4>
-          <div className="sponsors-grid">
-            {sponsors.map((sponsor, index) => (
-              <div key={index} className="sponsor-item cyber-card">
-                <div className="sponsor-logo">{sponsor.logo}</div>
-                <div className="sponsor-name">{sponsor.name}</div>
-              </div>
-            ))}
-          </div>
-          <div className="sponsor-cta">
-            <p>Interested in sponsoring future events?</p>
-            <button className="cyber-btn cyber-btn-small">
-              <span>Partner with DNS</span>
-            </button>
-          </div>
-        </div>
-
-        {/* Newsletter Signup */}
-        <div className="footer-newsletter">
-          <div className="newsletter-content cyber-card">
-            <h4 className="newsletter-heading orbitron neon-cyan">
-              Stay Updated
-            </h4>
-            <p className="newsletter-description">
-              Get the latest updates about HackElite'25 and future DNS events
-            </p>
-            <div className="newsletter-form">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="cyber-input newsletter-input"
-              />
-              <button className="cyber-btn cyber-btn-primary newsletter-btn">
-                <span>Subscribe</span>
-                <div className="btn-glow"></div>
-              </button>
-            </div>
-            <p className="newsletter-note">
-              We respect your privacy. Unsubscribe at any time.
-            </p>
           </div>
         </div>
 
@@ -318,7 +204,7 @@ export default function Footer() {
 
         .footer-main {
           display: grid;
-          grid-template-columns: 2fr 1fr 1fr 1.5fr;
+          grid-template-columns: 2fr 1fr;
           gap: 3rem;
           margin-bottom: 3rem;
         }
@@ -409,34 +295,6 @@ export default function Footer() {
           transform: scale(1.2);
         }
 
-        .contact-details {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-        }
-
-        .contact-item {
-          display: flex;
-          align-items: flex-start;
-          gap: 0.8rem;
-        }
-
-        .contact-icon {
-          font-size: 1.2rem;
-          margin-top: 0.1rem;
-        }
-
-        .contact-text,
-        .contact-link {
-          color: var(--text-secondary);
-          font-size: 0.9rem;
-          line-height: 1.5;
-        }
-
-        .contact-link:hover {
-          color: var(--accent-cyan);
-        }
-
         .footer-social {
           margin-bottom: 3rem;
         }
@@ -518,87 +376,6 @@ export default function Footer() {
 
         .social-link:hover .social-glow {
           left: 100%;
-        }
-
-        .footer-sponsors {
-          margin-bottom: 3rem;
-          text-align: center;
-        }
-
-        .sponsors-heading {
-          font-size: 1.8rem;
-          margin-bottom: 2rem;
-        }
-
-        .sponsors-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-          gap: 1rem;
-          margin-bottom: 2rem;
-        }
-
-        .sponsor-item {
-          padding: 1.5rem;
-          background: rgba(26, 26, 46, 0.6);
-          text-align: center;
-        }
-
-        .sponsor-logo {
-          font-size: 2.5rem;
-          margin-bottom: 0.5rem;
-        }
-
-        .sponsor-name {
-          font-size: 0.9rem;
-          color: var(--text-secondary);
-        }
-
-        .sponsor-cta p {
-          color: var(--text-secondary);
-          margin-bottom: 1rem;
-        }
-
-        .footer-newsletter {
-          margin-bottom: 3rem;
-        }
-
-        .newsletter-content {
-          padding: 2.5rem;
-          background: rgba(26, 26, 46, 0.8);
-          text-align: center;
-        }
-
-        .newsletter-heading {
-          font-size: 1.8rem;
-          margin-bottom: 1rem;
-        }
-
-        .newsletter-description {
-          color: var(--text-secondary);
-          margin-bottom: 2rem;
-        }
-
-        .newsletter-form {
-          display: flex;
-          gap: 1rem;
-          margin-bottom: 1rem;
-          max-width: 400px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .newsletter-input {
-          flex: 1;
-          clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
-        }
-
-        .newsletter-btn {
-          white-space: nowrap;
-        }
-
-        .newsletter-note {
-          font-size: 0.8rem;
-          color: var(--text-muted);
         }
 
         .footer-countdown {
@@ -707,12 +484,8 @@ export default function Footer() {
         /* Responsive Design */
         @media (max-width: 1024px) {
           .footer-main {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 2rem;
-          }
-
-          .footer-brand {
-            grid-column: 1 / -1;
           }
         }
 
@@ -726,10 +499,6 @@ export default function Footer() {
             grid-template-columns: 1fr;
           }
 
-          .newsletter-form {
-            flex-direction: column;
-          }
-
           .countdown-display {
             flex-wrap: wrap;
             gap: 1.5rem;
@@ -737,10 +506,6 @@ export default function Footer() {
 
           .footer-links-bottom {
             flex-wrap: wrap;
-          }
-
-          .sponsors-grid {
-            grid-template-columns: repeat(2, 1fr);
           }
         }
       `}</style>
