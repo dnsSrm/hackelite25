@@ -72,10 +72,10 @@ export default function Home() {
       <nav className="nav-container">
         <div className="nav-brand">
           <Image 
-            src="/media/dns logo1.jpg" 
+            src="/dns_logo.png" 
             alt="DNS Logo" 
-            width={50} 
-            height={50}
+            width={90} 
+            height={60}
             className="brand-logo"
           />
           <span className="brand-text">HackElite'25</span>
@@ -425,8 +425,6 @@ export default function Home() {
                 <li>Winner Trophy</li>
                 <li>Certificates</li>
                 <li>Internship Opportunities</li>
-                <li>1-Year DNS Premium Membership</li>
-                <li>Mentor Connect Program</li>
               </ul>
             </div>
 
@@ -438,8 +436,6 @@ export default function Home() {
               <ul className="prize-benefits">
                 <li>Runner-up Trophy</li>
                 <li>Certificates</li>
-                <li>Interview Fast-track</li>
-                <li>6-Month DNS Membership</li>
               </ul>
             </div>
 
@@ -451,8 +447,6 @@ export default function Home() {
               <ul className="prize-benefits">
                 <li>Bronze Trophy</li>
                 <li>Certificates</li>
-                <li>Portfolio Review</li>
-                <li>3-Month DNS Membership</li>
               </ul>
             </div>
           </div>
@@ -615,12 +609,15 @@ export default function Home() {
         .nav-brand {
           display: flex;
           align-items: center;
-          gap: 1rem;
+          gap: 1.2rem;
+          min-width: 200px;
         }
 
         .brand-logo {
           border-radius: 50%;
           border: 2px solid var(--cyber-cyan);
+          padding: 2px;
+          transition: all 0.3s ease;
         }
 
         .brand-text {
@@ -669,7 +666,7 @@ export default function Home() {
         .nav-toggle span {
           width: 25px;
           height: 3px;
-          background: var(--cyber-cyan);
+          background: white;
           transition: all 0.3s ease;
         }
 
@@ -1511,17 +1508,25 @@ export default function Home() {
           .date-range {
             flex-direction: column;
             gap: 1rem;
+            align-items: center;
+            text-align: center;
+          }
+
+          .start-date,
+          .end-date {
+            align-items: center;
+            text-align: center;
+            width: 100%;
           }
 
           .duration-line {
             height: 50px;
             width: 2px;
+            margin: 0 auto;
           }
 
           .duration-line:after {
-            top: 50%;
-            left: 20px;
-            transform: translateY(-50%);
+            display: none;
           }
         }
 
