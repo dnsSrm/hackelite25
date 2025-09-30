@@ -401,7 +401,7 @@ export default function Home() {
                   </div>
                   <div className="info-item">
                     <span className="info-label">Team Size:</span>
-                    <span className="info-value">1-4 Members</span>
+                    <span className="info-value">1-6 Members</span>
                   </div>
                   <div className="info-item">
                     <span className="info-label">Eligibility:</span>
@@ -409,7 +409,7 @@ export default function Home() {
                   </div>
                   <div className="info-item">
                     <span className="info-label">Registration Closes:</span>
-                    <span className="info-value">Oct 10, 2025</span>
+                    <span className="info-value">Oct 4, 2025</span>
                   </div>
                 </div>
               </div>
