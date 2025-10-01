@@ -108,36 +108,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Event Countdown */}
-        <div className="footer-countdown">
-          <div className="countdown-content cyber-card">
-            <h4 className="countdown-heading orbitron neon-magenta">
-              Event Countdown
-            </h4>
-            <div className="countdown-display">
-              <div className="countdown-item">
-                <div className="countdown-number neon-cyan orbitron">16</div>
-                <div className="countdown-label">Days</div>
-              </div>
-              <div className="countdown-separator neon-magenta">:</div>
-              <div className="countdown-item">
-                <div className="countdown-number neon-green orbitron">04</div>
-                <div className="countdown-label">Hours</div>
-              </div>
-              <div className="countdown-separator neon-cyan">:</div>
-              <div className="countdown-item">
-                <div className="countdown-number neon-magenta orbitron">23</div>
-                <div className="countdown-label">Minutes</div>
-              </div>
-            </div>
-            <div className="countdown-cta">
-              <button className="cyber-btn cyber-btn-magenta">
-                <span>Register Now!</span>
-                <div className="btn-glow"></div>
-              </button>
-            </div>
-          </div>
-        </div>
+
 
         {/* Bottom Bar */}
         <div className="footer-bottom">
@@ -378,49 +349,7 @@ export default function Footer() {
           left: 100%;
         }
 
-        .footer-countdown {
-          margin-bottom: 3rem;
-        }
 
-        .countdown-content {
-          padding: 2.5rem;
-          background: rgba(26, 26, 46, 0.8);
-          text-align: center;
-        }
-
-        .countdown-heading {
-          font-size: 1.8rem;
-          margin-bottom: 2rem;
-        }
-
-        .countdown-display {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          gap: 1rem;
-          margin-bottom: 2rem;
-        }
-
-        .countdown-item {
-          text-align: center;
-        }
-
-        .countdown-number {
-          font-size: 2.5rem;
-          font-weight: 900;
-          line-height: 1;
-        }
-
-        .countdown-label {
-          font-size: 0.8rem;
-          color: var(--text-secondary);
-          margin-top: 0.25rem;
-        }
-
-        .countdown-separator {
-          font-size: 2rem;
-          font-weight: 900;
-        }
 
         .footer-bottom {
           border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -499,10 +428,7 @@ export default function Footer() {
             grid-template-columns: 1fr;
           }
 
-          .countdown-display {
-            flex-wrap: wrap;
-            gap: 1.5rem;
-          }
+
 
           .footer-links-bottom {
             flex-wrap: wrap;
