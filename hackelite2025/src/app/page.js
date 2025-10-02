@@ -145,7 +145,7 @@ export default function Home() {
 
           <div className="hero-actions">
             <a 
-              href="https://forms.gle/CvrHfZF59toWtYVPA" 
+              href="https://unstop.com/hackathons/hackelite-25-srm-institute-of-science-and-technology-vadapalani-campus-1563852" 
               target="_blank" 
               rel="noopener noreferrer"
               className="cyber-btn primary"
@@ -429,7 +429,7 @@ export default function Home() {
             <div className="registration-form-container">
               <div className="form-card">
                 <h3>Quick Registration</h3>
-                <a href="https://forms.gle/CvrHfZF59toWtYVPA" target="_blank" rel="noopener noreferrer" className="cyber-btn primary large">
+                <a href="https://unstop.com/hackathons/hackelite-25-srm-institute-of-science-and-technology-vadapalani-campus-1563852" target="_blank" rel="noopener noreferrer" className="cyber-btn primary large">
                   Complete Registration Form
                 </a>
                 <p className="form-note">
